@@ -46,3 +46,7 @@ h3 {
 img {
   margin-top: 5%;
 }
+#result1, #result2 {
+  font-size: 45px;
+  font-weight: bold;
+}
