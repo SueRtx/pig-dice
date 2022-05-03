@@ -9,33 +9,42 @@
   <title>Pig Dice</title>
 </head>
 <body>
+  <header class="main-header" roll="banner">
+    <img src="img/die1.jpeg" heigt="100px" width="100px" alt="picture of a die face">
+    <img src="img/die2.jpeg" heigt="100px" width="100px" alt="picture of a die face">
+    <img src="img/die3.jpeg" heigt="100px" width="100px" alt="picture of a die face">
+    <img src="img/dice.gif" height="100px" width="100px" alt="gif of rolling die">
+    <img src="img/die4.jpeg" heigt="100px" width="100px" alt="picture of a die face">
+    <img src="img/die5.jpeg" heigt="100px" width="100px" alt="picture of a die face">
+    <img src="img/die6.jpeg" heigt="100px" width="100px" alt="picture of a die face">
+  </header>
   <div id="container">
     <h1>Pig Dice!!!!</h1>
     <div class="row"> 
       <div class="col-6"id="p1">
-      <h2>Player1</h2>
-        <div id="turn">
-          <button type="click" id="player1DiceRoll">Roll!</button>
+        <h2>Player 1</h2>
+        <div id="turn1">  
+          <h3>Total Score: <span id="Score1"></span></h3>
+          <button type="click" id="player1DiceRoll">Roll</button>
           <button type="click" id="player1Hold">Hold</button>
+          <br>
+          <h4>Dice Roll: <span id="diceRoll1"></span></h4>
+          <h3>Current Score: <span id="tempScore1"></span></h3>
+          <div id="result1"></div> 
         </div>
-        <br>
-        <h3>Dice Roll: <span id="diceRoll1"></span></h3>
-        <h3>Your turn's score: <span id="tempScore1"></span></h3>
-        <h3>Your Total score: <span id="Score1"></span></h3>
-        <div id="result1"></div> 
       </div> 
 
-      <div class="col-6"id="p2">  
-        <h2>Player2</h2>
-          <div id="turn2">
-            <button type="click" id="player2DiceRoll">Roll!</button>
-            <button type="click" id="player2Hold">Hold</button>
-          </div>
+      <div class="col-6"id="p2">
+        <h2>Player 2</h2>
+        <div id="turn2"> 
+          <h3>Total Score: <span id="Score2"></span></h3> 
+          <button type="click" id="player2DiceRoll">Roll</button>
+          <button type="click" id="player2Hold">Hold</button>
           <br>
-          <h3>Dice Roll: <span id="diceRoll2"></span></h3>
-          <h3>Your turn's score: <span id="tempScore2"></span></h3>
-          <h3>Your Total score: <span id="Score2"></span></h3>
+          <h4>Dice Roll: <span id="diceRoll2"></span></h4>
+          <h3>Current Score: <span id="tempScore2"></span></h3>
           <div id="result2"></div>
+          </div>  
         </div> 
       </div>  
     </div>  
