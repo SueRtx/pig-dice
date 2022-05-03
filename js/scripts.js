@@ -20,11 +20,24 @@ Player.prototype.hold = function() {
   return this.Score;
 }
 
+Player.prototype.reset = function() {
+  this.Score = 0;
+  this.tempScore = 0;
+  return this.Score;
+}
+
 let player1 = new Player(1);
 let player2 = new Player(2);
 $(document).ready(function () {
-  
+  $("#startGame").click(function(event){
+    event.preventDefault();
+    $(".game").show();
+    $("#startGame").hide();
+  });
+
+
   $("#player1DiceRoll").click(function (event) {
+    event.preventDefault();
     let diceRoll1 = player1.roll();
     $("#diceRoll1").text(diceRoll1[0]);
     $("#tempScore1").text(diceRoll1[1]);
@@ -37,6 +50,7 @@ $(document).ready(function () {
   });
 
   $("#player2DiceRoll").click(function (event) {
+    event.preventDefault();
     let diceRoll2 = player2.roll();
     $("#diceRoll2").text(diceRoll2[0]);
     $("#tempScore2").text(diceRoll2[1]);
@@ -49,6 +63,7 @@ $(document).ready(function () {
   });
 
   $("#player1Hold").click(function (event) {
+    event.preventDefault();
     $("#Score1").text(player1.hold());
     $("#diceRoll1").text("");
     $("#tempScore1").text("");
@@ -57,12 +72,14 @@ $(document).ready(function () {
     $("#player2Hold").show();
     $("#player2DiceRoll").show();
     if (player1.Score >= 30) {
-      $("#result1").append("WINNER");
-      $("#result2").append("LOSER");
+      $("#result1").text("WINNER");
+      $("#result2").text("LOSER");
+      $("#playAgain").show();
     }
   });
 
   $("#player2Hold").click(function (event) {
+    event.preventDefault();
     $("#Score2").text(player2.hold());
     $("#diceRoll2").text("");
     $("#tempScore2").text("");
@@ -71,9 +88,21 @@ $(document).ready(function () {
     $("#player1Hold").show();
     $("#player1DiceRoll").show();
     if (player2.Score >= 30) {
-      $("#result2").append("WINNER");
-      $("#result1").append("LOSER");
+      $("#result1").show();
+      $("#result2").show();
+      $("#result2").text("WINNER");
+      $("#result1").text("LOSER");
+      $("#playAgain").show();
     }
+  });
+
+  $("#playAgain").click(function (event){
+    event.preventDefault();
+    $("#Score1").text(player1.reset());
+    $("#Score2").text(player2.reset());
+    $("#result1").hide();
+    $("#result2").hide();
+    $("#playAgain").hide();
   });
 });
 

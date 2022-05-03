@@ -1,3 +1,7 @@
+.game, #playAgain{
+  display: none;
+}
+
 body {
   text-align: center;
   background: rgb(207, 242, 231);
@@ -13,14 +17,14 @@ h2 {
 }
 #turn1 {
   margin-left: 25%;
-  margin-top: 2%;
+ 
   color:rgb(51, 42, 232); 
   border: solid rgb(238, 20, 38) 15px;
   width: 60%;
   padding: 15px; 
 }
 #turn2 {
-  margin-top: 2%;
+  
   margin-left: 20%;
   color:rgb(230, 20, 20);
   width: 60%;
@@ -33,14 +37,18 @@ h3 {
   text-align: left;
 }
 #player1DiceRoll, #player2DiceRoll {
-  color:rgb(15, 1, 1); 
+  color:rgb(15, 1, 1);
+  border: solid rgb(2, 1, 17) 5px;
   font-size: 25px;
+  width: 30%;
   background: rgb(246, 243, 68);
 }
 #player1Hold, #player2Hold {
-  color:rgb(15, 1, 1); 
+  color:rgb(15, 1, 1);
+  border: solid rgb(2, 1, 17) 5px; 
   font-size: 25px;
   margin-left: 10%;
+  width: 30%;
   background: rgb(230, 151, 82);
 }
 img {
@@ -48,5 +56,17 @@ img {
 }
 #result1, #result2 {
   font-size: 45px;
+  font-size: 25px;
   font-weight: bold;
+}
+
+#startGame, #playAgain {
+  margin-top: 2%;
+  color:rgb(42, 23, 147); 
+  font-size: 35px;
+  background: rgb(246, 243, 68);
+  font-weight: bold;
+  border: solid rgb(4, 72, 41) 11px;
+  width: 30%;
+  
 }
