@@ -20,10 +20,8 @@ Player.prototype.hold = function() {
   return this.Score;
 }
 
-
 let player1 = new Player(1);
 let player2 = new Player(2);
-
 $(document).ready(function () {
   
   $("#player1DiceRoll").click(function (event) {

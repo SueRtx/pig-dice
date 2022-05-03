@@ -18,7 +18,6 @@ h2 {
   border: solid rgb(238, 20, 38) 15px;
   width: 60%;
   padding: 15px; 
-
 }
 #turn2 {
   margin-top: 2%;
@@ -27,7 +26,6 @@ h2 {
   width: 60%;
   border: solid rgb(51, 42, 232) 15px;
   padding: 15px; 
- 
 }
 h3 {
   color:rgb(29, 121, 12);
@@ -45,7 +43,6 @@ h3 {
   margin-left: 10%;
   background: rgb(230, 151, 82);
 }
-
 img {
   margin-top: 5%;
 }
