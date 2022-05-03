@@ -17,22 +17,24 @@ h2 {
 }
 #turn1 {
   margin-left: 25%;
- 
-  color:rgb(51, 42, 232); 
-  border: solid rgb(238, 20, 38) 15px;
+  background: rgb(25, 40, 90);
+  color:rgb(161, 27, 27); 
+  border: solid rgb(203, 25, 49) 10px;
   width: 60%;
-  padding: 15px; 
+  padding: 15px;
+  font-weight: bold
 }
 #turn2 {
-  
+  background: rgb(203, 25, 49);
   margin-left: 20%;
-  color:rgb(230, 20, 20);
+  color:rgb(25, 40, 90);
   width: 60%;
-  border: solid rgb(51, 42, 232) 15px;
-  padding: 15px; 
+  border: solid rgb(25, 40, 90) 10px;
+  padding: 15px;
+  font-weight: bold
 }
 h3 {
-  color:rgb(29, 121, 12);
+  color:rgb(183, 230, 174);
   font-weight: bold; 
   text-align: left;
 }
@@ -42,6 +44,7 @@ h3 {
   font-size: 25px;
   width: 30%;
   background: rgb(246, 243, 68);
+  
 }
 #player1Hold, #player2Hold {
   color:rgb(15, 1, 1);
