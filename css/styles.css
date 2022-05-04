@@ -1,7 +1,6 @@
-.game, #playAgain{
+.game, #playAgain {
   display: none;
 }
-
 body {
   text-align: center;
   background: rgb(207, 242, 231);
@@ -16,19 +15,19 @@ h2 {
   color:rgb(4, 92, 25);
 }
 #turn1 {
-  margin-left: 25%;
+  margin-left: 20%;
   background: rgb(25, 40, 90);
-  color:rgb(161, 27, 27); 
+  color:rgb(203, 25, 49); 
   border: solid rgb(203, 25, 49) 10px;
-  width: 60%;
+  width: 80%;
   padding: 15px;
   font-weight: bold
 }
 #turn2 {
   background: rgb(203, 25, 49);
-  margin-left: 20%;
+  
   color:rgb(25, 40, 90);
-  width: 60%;
+  width: 80%;
   border: solid rgb(25, 40, 90) 10px;
   padding: 15px;
   font-weight: bold
@@ -62,14 +61,24 @@ img {
   font-size: 25px;
   font-weight: bold;
 }
-
-#startGame, #playAgain {
+#startGame,\ {
   margin-top: 2%;
   color:rgb(42, 23, 147); 
-  font-size: 35px;
+  font-size: 45px;
   background: rgb(246, 243, 68);
   font-weight: bold;
   border: solid rgb(4, 72, 41) 11px;
   width: 30%;
   
+}
+#playAgain {
+  background: rgb(246, 243, 68);
+  color:rgb(203, 25, 49);
+  width: 60%;
+  border: solid rgb(25, 40, 90) 10px;
+  font-weight: bold;
+  font-size: 35px;
+}
+.movingDie {
+  margin-top: 10%;
 }
