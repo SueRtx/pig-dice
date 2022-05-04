@@ -3,15 +3,15 @@
 }
 body {
   text-align: center;
-  background-color: rgb(218, 239, 242);
+  background-color: rgb(1, 11, 13);
 }
 h1 {
-  color:rgb(5, 53, 16);
+  color:rgb(49, 224, 90);
   font-weight: bold;
   font-size: 45px;
 }
 h2 {
-  color:rgb(4, 92, 25);
+  color:rgb(101, 249, 56);
 }
 #turn1 {
   margin-left: 20%;
@@ -73,7 +73,7 @@ img {
   font-weight: bold;
   border: solid rgb(237, 121, 175) 10px;
   font-weight: bold;
-  font-size: 35px;
+  font-size: 25px;
 }
 .movingDie {
   margin-top: 10%;
