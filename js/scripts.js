@@ -35,7 +35,6 @@ $(document).ready(function () {
     $("#startGame").hide();
   });
 
-
   $("#player1DiceRoll").click(function (event) {
     event.preventDefault();
     let diceRoll1 = player1.roll();
@@ -64,7 +63,7 @@ $(document).ready(function () {
 
   $("#player1Hold").click(function (event) {
     event.preventDefault();
-    $("#Score1").text(player1.hold());
+    $("#score1").text(player1.hold());
     $("#diceRoll1").text("");
     $("#tempScore1").text("");
     $("#player1DiceRoll").hide();
@@ -80,7 +79,7 @@ $(document).ready(function () {
 
   $("#player2Hold").click(function (event) {
     event.preventDefault();
-    $("#Score2").text(player2.hold());
+    $("#score2").text(player2.hold());
     $("#diceRoll2").text("");
     $("#tempScore2").text("");
     $("#player2DiceRoll").hide();
@@ -98,8 +97,8 @@ $(document).ready(function () {
 
   $("#playAgain").click(function (event){
     event.preventDefault();
-    $("#Score1").text(player1.reset());
-    $("#Score2").text(player2.reset());
+    $("#score1").text(player1.reset());
+    $("#score2").text(player2.reset());
     $("#result1").hide();
     $("#result2").hide();
     $("#playAgain").hide();

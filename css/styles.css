@@ -3,10 +3,9 @@
 }
 body {
   text-align: center;
-  background: rgb(207, 242, 231);
+  background-color: rgb(218, 239, 242);
 }
 h1 {
-  margin-top: 2%;
   color:rgb(5, 53, 16);
   font-weight: bold;
   font-size: 45px;
@@ -21,16 +20,15 @@ h2 {
   border: solid rgb(203, 25, 49) 10px;
   width: 80%;
   padding: 15px;
-  font-weight: bold
+  font-weight: bold;
 }
 #turn2 {
   background: rgb(203, 25, 49);
-  
   color:rgb(25, 40, 90);
   width: 80%;
   border: solid rgb(25, 40, 90) 10px;
   padding: 15px;
-  font-weight: bold
+  font-weight: bold;
 }
 h3 {
   color:rgb(183, 230, 174);
@@ -43,7 +41,6 @@ h3 {
   font-size: 25px;
   width: 30%;
   background: rgb(246, 243, 68);
-  
 }
 #player1Hold, #player2Hold {
   color:rgb(15, 1, 1);
@@ -58,24 +55,23 @@ img {
 }
 #result1, #result2 {
   font-size: 45px;
-  font-size: 25px;
   font-weight: bold;
 }
-#startGame,\ {
+#startGame {
   margin-top: 2%;
-  color:rgb(42, 23, 147); 
+  color:rgb(211, 77, 119); 
   font-size: 45px;
   background: rgb(246, 243, 68);
   font-weight: bold;
-  border: solid rgb(4, 72, 41) 11px;
+  border: solid rgb(237, 121, 175) 11px;
   width: 30%;
-  
 }
 #playAgain {
   background: rgb(246, 243, 68);
-  color:rgb(203, 25, 49);
+  color:rgb(236, 65, 88);
   width: 60%;
-  border: solid rgb(25, 40, 90) 10px;
+  font-weight: bold;
+  border: solid rgb(237, 121, 175) 10px;
   font-weight: bold;
   font-size: 35px;
 }
