@@ -5,10 +5,14 @@ body {
   text-align: center;
   background-color: rgb(1, 11, 13);
 }
+.main-header {
+  margin-top: 2%; 
+  width: 100%;
+}
 h1 {
   color:rgb(49, 224, 90);
   font-weight: bold;
-  font-size: 45px;
+  font-size: 50px;
 }
 h2 {
   color:rgb(101, 249, 56);
@@ -33,7 +37,7 @@ h2 {
 h3 {
   color:rgb(183, 230, 174);
   font-weight: bold; 
-  text-align: left;
+  text-align: center;
 }
 #player1DiceRoll, #player2DiceRoll {
   color:rgb(15, 1, 1);
@@ -51,7 +55,7 @@ h3 {
   background: rgb(230, 151, 82);
 }
 img {
-  margin-top: 5%;
+  margin-top: 1%;
 }
 #result1, #result2 {
   font-size: 45px;
@@ -67,11 +71,12 @@ img {
   width: 30%;
 }
 #playAgain {
-  background: rgb(246, 243, 68);
-  color:rgb(236, 65, 88);
-  width: 60%;
+  background: black;
+  margin-top: 20%;
+  color:white;
+  width: 70%;
   font-weight: bold;
-  border: solid rgb(237, 121, 175) 10px;
+  border: solid white 5px;
   font-weight: bold;
   font-size: 25px;
 }
