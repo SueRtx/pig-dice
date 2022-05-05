@@ -71,8 +71,8 @@ $(document).ready(function () {
     $("#player2Hold").show();
     $("#player2DiceRoll").show();
     if (player1.Score >= 30) {
+      $("#result1").show();
       $("#result1").text("WINNER");
-     
       $("#turn2").hide();
       $("#playAgain").show();
     }
@@ -88,12 +88,10 @@ $(document).ready(function () {
     $("#player1Hold").show();
     $("#player1DiceRoll").show();
     if (player2.Score >= 30) {
-      $("#result1").show();
       $("#result2").show();
       $("#result2").text("WINNER");
       $("#turn1").hide();
       $("#playAgain").show();
-      
     }
   });
 
