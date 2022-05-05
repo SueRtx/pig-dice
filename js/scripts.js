@@ -72,7 +72,8 @@ $(document).ready(function () {
     $("#player2DiceRoll").show();
     if (player1.Score >= 30) {
       $("#result1").text("WINNER");
-      $("#result2").text("LOSER");
+     
+      $("#turn2").hide();
       $("#playAgain").show();
     }
   });
@@ -90,8 +91,9 @@ $(document).ready(function () {
       $("#result1").show();
       $("#result2").show();
       $("#result2").text("WINNER");
-      $("#result1").text("LOSER");
+      $("#turn1").hide();
       $("#playAgain").show();
+      
     }
   });
 
@@ -102,6 +104,9 @@ $(document).ready(function () {
     $("#result1").hide();
     $("#result2").hide();
     $("#playAgain").hide();
+    $("#turn1").show();
+    $("#turn2").show();
+
   });
 });
 
