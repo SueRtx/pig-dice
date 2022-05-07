@@ -87,7 +87,7 @@ $(document).ready(function () {
     $("#player2Hold").hide();
     $("#player1Hold").show();
     $("#player1DiceRoll").show();
-    if (player2.Score >= 30) {
+    if (player2.Score >= 100) {
       $("#result2").show();
       $("#result2").text("WINNER");
       $("#turn1").hide();
@@ -104,7 +104,6 @@ $(document).ready(function () {
     $("#playAgain").hide();
     $("#turn1").show();
     $("#turn2").show();
-
   });
 });
 
